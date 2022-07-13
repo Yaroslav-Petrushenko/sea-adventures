@@ -1,0 +1,154 @@
+.header 
+    background: url(../img/header.png) no-repeat
+    background-size: cover
+.flex
+    display: flex
+
+
+.pricingTable
+    text-align: center
+    h1
+        padding-top: 200rem
+        margin: 0
+        font-size: 46rem
+        letter-spacing: 1rem
+        color: #ffffff
+        font-weight: 400
+        font-family: "Rubik"
+        text-align: center
+        text-transform: uppercase
+        +media(1450)
+            font-size: 72px
+
+    p
+        
+        font-size: 16rem
+        color: #ffffff
+        font-weight: 400
+        font-style: italic
+        font-family: "Rubik"
+        +media(1450)
+            width: 43%
+            margin: 0 auto
+            padding-top: 20px
+            padding-bottom: 30px
+
+    h2
+        margin: 0
+        padding-top: 260rem
+        font-size: 36rem
+        letter-spacing: 1rem
+        color: #333333
+        font-weight: 400
+        font-family: "Rubik"
+        text-transform: uppercase
+        +media(1024)
+            width: 24%
+            margin: 0 auto
+    h3
+        font-size: 16rem
+        color: #333333
+        font-weight: 400
+        font-style: italic
+        font-family: "Rubik"
+        text-align: center
+.navmenu
+    display: none
+    +media(1090)
+        display: flex
+        position: relative   
+        flex-direction: row
+        top: 0      
+    
+.top 
+    justify-content: space-between
+    align-items: center
+
+.logo 
+    align-items: center
+    p
+        margin-left: 10rem
+        align-items: center
+        font-size: 36rem
+        color: #ffffff
+        font-weight: 500
+        font-family: "Exo2.0"
+
+.top-menu 
+    li 
+        a 
+            padding: 15rem 20rem
+            text-decoration: none
+            text-transform: uppercase
+            font-size: 14rem
+            letter-spacing: 1rem
+            color: #ffffff
+            font-weight: 400
+            font-family: "Rubik"
+            &:hover 
+                color: #ffb700
+
+.hamburger
+    height: 50rem
+    display: flex
+    flex-direction: column
+    justify-content: center
+    +media(1090)
+        display: none
+    span
+        margin: 4rem 0
+        width: 35rem
+        height: 3rem
+        background-color: #fff
+        border-radius: 5rem
+
+
+.active-burger 
+    display: inline-block
+    position: absolute
+    flex-direction: column
+    text-align: center
+    top: 100rem
+    left: 0
+    right: 0
+    background-color: #0099ff
+    background-size: cover
+    
+    z-index: 2
+    +media(700)
+        top: 115px
+    ul
+        flex-direction: column
+        align-items: center
+    li
+        a
+            display: inline-block
+            padding: 20px 30px
+
+.beff
+    padding-top: 36rem
+    padding-bottom: 43rem
+    a  
+        position: absolute
+        
+        &::before
+            content: ""
+            position: absolute
+            top: 0
+            right: 0
+            width: 8px
+            height: 8px
+            border-right: 2px solid #000000
+            border-bottom: 2px solid #000000
+            transform: rotate(45deg)
+            
+        &::after
+            content: ""
+            position: absolute
+            top: 7px
+            right: 0
+            width: 8px
+            height: 8px
+            border-right: 2px solid #000000
+            border-bottom: 2px solid #000000
+            transform: rotate(45deg)

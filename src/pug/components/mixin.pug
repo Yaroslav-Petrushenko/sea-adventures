@@ -1,0 +1,81 @@
+- 
+    let mainMenu = [
+        {
+            name: "Гoловна " , 
+            url: "#"
+        },
+        {
+            name: "послуги" , 
+            url: "#"
+        },
+        {
+            name: "про компанію" , 
+            url: "#"
+        },
+        {
+            name: "Акції" , 
+            url: "#"
+        },
+        {
+            name: "Партнери" , 
+            url: "#"
+        },
+        {
+            name: "відгуки" , 
+            url: "#"
+        },
+        {
+            name: "Контакти" , 
+            url: "#"
+        },
+    ] 
+- 
+
+ let cards = {
+        free: {
+            src: "img/velik",
+            alt: "Тур на велосипедах",
+            in: "Тур на велосипедах",
+            price: "335",
+            description: "Подорожуючи  на велосипеді, ви поринете в атмосферу мальовничих гір, чарівнмх краєвидів та шалених пригод.",
+            href: "#"
+        },
+        basic: {
+            src: "img/krug",
+            alt: "Екскурсія на острів",
+            in: "Екскурсія на острів",
+            price: "500",
+            description: "Подорож на острів занурить Вас у незабутнні пригоди. Неймовірна краса  у будь-яку пору року.",
+            href: "#"
+
+        },
+        vip: {
+            src: "img/massage",
+            alt: "Особливе замовлення",
+            in: "Особливе замовлення",
+            price: "250",
+            description: "Обираючи цю подорож, Ви самостійно робите її незабутнбою та не схожою на будь-які інші.",
+            href: "#"
+
+        }
+    }
+
+mixin menu (items) 
+    for item in items 
+        li
+            a(href=item.url) #{item.name} 
+
+mixin card (item)
+    figure.price-card
+        figcaption 
+            picture 
+                sourse(srcset=item.src + ".webp", type="image/webp")
+                img(src=item.src + ".png", alt=item.alt)
+            p.in #{item.in} 
+            p.price #{item.price}<span>/грн*</span>
+            p.card-descr #{item.description}
+            
+
+
+
+                                      

@@ -1,0 +1,23 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body 
+        .main
+            section.plan
+                .wrapper.flex
+                    .our-company
+                        h2 про нашу компанію
+                        p.comp Наша компанія пропонує ряд цікавих-розважальних послуг, які принесуть вам ряд вражень!
+                        a(href="#" class="orange") детальніше
+                        p.atention * - зверніть увагу, зміна ціни може залежати від курсу долара.
+                    .flex
+                        +card(cards.free)
+                        +card(cards.basic)
+                        +card(cards.vip)
+
+            section.map.flex
+            

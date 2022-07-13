@@ -1,0 +1,32 @@
+=btn ($color) 
+    display: inline-block
+    border-radius: 23rem
+    padding: 16rem 52rem
+    font-size: 16rem
+    letter-spacing: 1rem
+    font-weight: 400
+    font-family: "Rubik"
+    text-transform: uppercase
+    text-decoration: none
+    text-align: center
+    transition: all .4s 
+    @if $color == "white" 
+        border-radius: 23rem
+        background-color: rgba(0,153,255,0)
+        color: #0099ff
+        border: 2rem solid #0099ff
+        &:hover 
+            transform: scale(1.3)
+    @else if $color == "orange" 
+        background-color: #ffb700
+        color: #ffffff
+        filter: drop-shadow(0rem 4rem 10.5rem rgba(193,139,1,0.24))
+        &:hover 
+            transform: scale(1.1)
+
+
+
+
+=media ($size)
+    @media screen and ( min-width: #{$size}px)
+        @content
