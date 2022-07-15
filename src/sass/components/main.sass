@@ -13,7 +13,7 @@
         background-color: #ffffff
 .price-probs
     text-align: left
-    margin: 10rem 20rem
+    margin: 15rem 20rem
     width: 270rem 
     text-align: center
     cursor: pointer
@@ -29,6 +29,7 @@
         font-weight: 400
         font-family: "Rubik"
         text-align: center
+        text-decoration: none
 
 .buttons
     .button
@@ -117,7 +118,11 @@
         font-family: "Rubik"
         text-decoration: none
 .tai
-    padding-left: 40rem
+    padding-left: 20rem
+    padding-right: 20rem
+    +media(646)
+        padding-left: 30rem
+
     
     h2
 
@@ -151,14 +156,25 @@
     background-size: cover
     background-position: bottom center
     margin-top: 80rem
+    padding-left: 20rem
+    padding-right: 20rem
+    +media(646)
+        padding-left: 0
+        padding-right: 0
+
+
 .hvulya
     margin-top: 90rem
     h3
         font-size: 56rem
         letter-spacing: 2rem
-        color: #ffffff
+        
         font-weight: 400
         font-family: "Rubik"
+    .yarco
+        color: #0099ff  
+    .bilo
+        color: #ffffff   
     p
         margin-top: 30rem
         margin-bottom: 30rem
@@ -166,6 +182,8 @@
         color: #ffffff
         font-weight: 400
         font-family: "PT Sans"
+        text-align: left
+        
 .deskription
     position: relative
     margin-top: 40rem
@@ -211,7 +229,8 @@
             background: url(../img/til.svg) no-repeat
             transform: translateX(-50%)
 .true
-    width: 100%           
+    width: 100%
+    height: 100%   
 
 .oleg
     margin-top: 17rem
@@ -268,6 +287,7 @@
         text-align: center
 .infodod
     h2
+        margin-top: 15rem
         font-size: 36rem
         letter-spacing: 1rem
         color: #333333
@@ -276,8 +296,10 @@
         text-align: center
         margin-bottom: 20rem
         +media(1200)
-            
 
+.grafinf,
+.foodinf
+    margin-top: 15rem
 .grafik
     margin: 0 20rem
     background: url(../img/house.png) no-repeat
@@ -287,7 +309,8 @@
     margin-bottom: 20rem 
     .infofood
         position: relative
-        padding: 38rem 56rem 0
+        padding-top: 38rem
+        padding-left: 83rem
         font-size: 18rem
         color: #ffffff
         font-weight: 400
@@ -298,10 +321,10 @@
             width: 34rem
             height: 42rem
             top: 43rem
-            left: 13rem
+            left: 31rem
             background: url(../img/konvert.png) no-repeat center
     .size
-        padding: 0 56rem
+        padding-left: 83rem
         font-size: 13rem
         color: #bbbbbb
         font-weight: 400
@@ -327,6 +350,9 @@
         background-color: rgba(255,183,0,0)
         border: 2rem solid #ffb700
         text-decoration: none
+        &:hover 
+            background-color: #ffb700
+            color: #ffffff
 .graf
     margin: 0 20rem
     background: url(../img/restor.png) no-repeat
@@ -334,7 +360,8 @@
     background-position: bottom center
     .infofood
         position: relative
-        padding: 36rem 56rem 0
+        padding-top: 38rem
+        padding-left: 83rem
         font-size: 18rem
         color: #ffffff
         font-weight: 400
@@ -345,10 +372,10 @@
             width: 34rem
             height: 42rem
             top: 43rem
-            left: 13rem
+            left: 31rem
             background: url(../img/konvert.png) no-repeat center
     .size
-        padding: 0 56rem
+        padding-left: 83rem
         font-size: 13rem
         color: #bbbbbb
         font-weight: 400
@@ -361,7 +388,7 @@
         font-family: "Rubik"
     .ora
         display: inline-block
-        margin: 0 30rem 15rem
+        margin: 0 30rem 13rem
         padding: 8rem 29rem
         font-size: 12rem
         letter-spacing: 0rem
@@ -373,6 +400,9 @@
         background-color: rgba(255,183,0,0)
         border: 2rem solid #ffb700
         text-decoration: none
+        &:hover 
+            background-color: #ffb700
+            color: #ffffff
 .anna
     text-align: center
     h4
@@ -383,15 +413,26 @@
         font-weight: 400
         font-family: "Rubik"
     p
+        padding: 10rem 90rem
         font-size: 13rem
         color: #999999
         font-weight: 400
         font-family: "Rubik"
     a
+        position: relative
         font-size: 18rem
         color: #0099ff
         font-weight: 400
         font-family: "Rubik"
+        text-decoration: none
+        &::before 
+            content: ""
+            position: absolute
+            width: 16px
+            height: 17px
+            top: 2px
+            left: -17px
+            background: url(../img/call.svg) no-repeat center
     h5
         font-size: 18rem
         color: #333333
@@ -441,9 +482,9 @@
     &::before,
     &::after
         position: absolute
-        height: 80%
+        height: 62%
         width: 47px
-        top: 0px
+        top: 10px
         border: 4px solid #ffb700
         +media(600)
             content: ""
@@ -453,3 +494,30 @@
     &::after
         left: 10px
         border-right: none
+
+.zakaz
+    position: relative
+    &::after,
+    &::before
+        content: ""
+        position: absolute 
+        top: 50%
+        right: -15px
+        transform: translate(-50%, -50%)
+        border-color: #0099ff
+        &:hover
+            border-color: #ffb700
+    &::before
+        width: 11px
+        height: 11px
+        right: -25px
+        top: 8px
+        border: 1px solid 
+        border-radius: 50%
+    &::after
+        width: 4px
+        height: 4px
+        top: 6px
+        border-bottom: 1px solid 
+        border-right: 1px solid 
+        transform: rotate(313deg)

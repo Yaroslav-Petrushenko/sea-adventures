@@ -32,7 +32,7 @@
                     h2.text-uppercase.text-lg-startv.text-left  Дивовижний безлюдний острів, який зводить людей з розуму
                     .row
                         .puh.col-12.col-xl-8
-                            p.d-block.text-center.text-xl-start Пхукет - курортно-туристична Мекка Таїланду. Білосніжний пісок, і бірюзове море, і мальовничі скелі, а на них же, трохи вище - буйна тропічна рослинність. Все це можна побачити на власні очі.
+                            p.d-block.text-left.text-xl-start Пхукет - курортно-туристична Мекка Таїланду. Білосніжний пісок, і бірюзове море, і мальовничі скелі, а на них же, трохи вище - буйна тропічна рослинність. Все це можна побачити на власні очі.
                             .flex.flex-column.flex-sm-row.justify-content-center.justify-content-xl-start.buttons 
                                 .button
                                     a.text-center(href="#" class="orange") замовити тур
@@ -45,9 +45,9 @@
         .container
             .row
                 .hvulya.col-12.col-xl-6.text-center.text-xl-start
-                    h3 СПІЙМАЙ ХВИЛЮ 
-                    h3.text-primary ЖИВИ ЯСКРАВО!
-                    p Полюбляєш екстрим та пригоди? Тоді тобі точно до нас! Мрієш стати на сапборд, але ніяк не міг наважитсь? Наші досвдчені інструктори навчать тебе вміло «піймати хвилі» та відчути себе справжнім сьорфером!
+                    h3.bilo СПІЙМАЙ ХВИЛЮ 
+                    h3.yarco ЖИВИ ЯСКРАВО!
+                    p.text-left Полюбляєш екстрим та пригоди? Тоді тобі точно до нас! Мрієш стати на сапборд, але ніяк не міг наважитсь? Наші досвдчені інструктори навчать тебе вміло «піймати хвилі» та відчути себе справжнім сьорфером!
                     a(href="#" class="orange") детальніше
                 .col-12.col-xl-6.text-center.text-xl-start.d-flex.justify-content-center    
                     .deskription.position-relative.d-flex.justify-content-center.flex-column.align-items-center
@@ -61,13 +61,13 @@
                 .row
                     h3.text-center Спеціальні пропозиції тижня
                     i.text-center Гарячі праозиції, по-швидше обирай і поїхали!
-                    .col-lg-6.col-xl-3.d-flex.justify-content-center
+                    .col-md-6.col-xl-3.d-flex.justify-content-center
                         +prob(probs.romantika)
-                    .col-lg-6.col-xl-3.d-flex.justify-content-center
+                    .col-md-6.col-xl-3.d-flex.justify-content-center
                         +prob(probs.velo)
-                    .col-lg-6.col-xl-3.d-flex.justify-content-center
+                    .col-md-6.col-xl-3.d-flex.justify-content-center
                         +prob(probs.island)
-                    .col-lg-6.col-xl-3.d-flex.justify-content-center
+                    .col-md-6.col-xl-3.d-flex.justify-content-center
                         +prob(probs.serf)
         hr.container
     section.infodod
@@ -76,19 +76,21 @@
                     .col-12.col-xl-3
                         h2.text-uppercase додаткова інформація
                     .col-lg-6.col-xl-3
-                        figure.grafik
-                            figcaption
-                                p.infofood Графік роботи готелів.xls
-                                p.size Розмір файла: 10Mb
-                                p.ctor Розклад роботи усіх наших готелів, можете знайти за цим посиланням. Та додатково завантажити їх фото.
-                                a.ora(href="#") скачати
+                        .grafinf
+                            figure.grafik
+                                figcaption
+                                    p.infofood Графік роботи готелів.xls
+                                    p.size Розмір файла: 10Mb
+                                    p.ctor Розклад роботи усіх наших готелів, можете знайти за цим посиланням. Та додатково завантажити їх фото.
+                                    a.ora(href="#") скачати
                     .col-lg-6.col-xl-3
-                        figure.graf
-                            figcaption
-                                p.infofood Інформація про харчування.xls
-                                p.size Розмір файла: 10Mb
-                                p.ctor У будь-якому нашому турі включені сніданки у вартість. Якщо ж бажаєте замовити додотково, то ознайомтесь з умовами.
-                                a.ora(href="#") скачати
+                        .foodinf
+                            figure.graf
+                                figcaption
+                                    p.infofood Інформація про харчування.xls
+                                    p.size Розмір файла: 10Mb
+                                    p.ctor У будь-якому нашому турі включені сніданки у вартість. Якщо ж бажаєте замовити додотково, то ознайомтесь з умовами.
+                                    a.ora(href="#") скачати
                     .col-12.col-xl-3.anna
                         h4 задати питання
                         p Скажіть доброго дня нашому консультанту,і ми з радістю відповімо на Ваші запитання
