@@ -31,7 +31,7 @@
     ] 
 - 
 
- let cards = {
+    let cards = {
         free: {
             src: "img/velik",
             alt: "Тур на велосипедах",
@@ -59,6 +59,44 @@
 
         }
     }
+- 
+    let probs = {
+        romantika: {
+            src: "img/romantik",
+            alt: "Спеціальні пропозиції тижня",
+            ins: "Романтична подорож на 2",
+            description: "Подорожуючи  на велосипеді, ви поринете в атмосферу мальовничих гір, чарівнмх краєвидів та шалених пригод.",
+            prices: "2599",
+            href: "#"
+        },
+        velo: {
+            src: "img/bike",
+            alt: "Спеціальні пропозиції тижня",
+            ins: "Велотур",
+            description: "Подорожуючи  на велосипеді, ви поринете в атмосферу мальовничих гір, чарівнмх краєвидів та шалених пригод.",
+            prices: "555",
+            href: "#"
+        },
+        island: {
+            src: "img/palma",
+            alt: "Спеціальні пропозиції тижня",
+            ins: "На острови!",
+            description: "Подорож на острів занурить Вас у незабутнні пригоди. Неймовірна краса  у будь-яку пору року.",
+            prices: "1559",
+            href: "#"
+
+        },
+        serf: {
+            src: "img/serf",
+            alt: "Спеціальні пропозиції тижня",
+            ins: "Катання на сьорфінгу",
+            description: "Обираючи цю подорож, Ви самостійно робите її незабутнбою та не схожою на будь-які інші.",
+            prices: "999",
+            href: "#"
+
+        }
+    }
+
 
 mixin menu (items) 
     for item in items 
@@ -74,6 +112,20 @@ mixin card (item)
             p.in #{item.in} 
             p.price #{item.price}<span>/грн*</span>
             p.card-descr #{item.description}
+
+mixin prob (item)
+    figure.price-probs
+        figcaption 
+            picture 
+                sourse(srcset=item.src + ".webp", type="image/webp")
+                img(src=item.src + ".png", alt=item.alt)
+            p.ins #{item.ins} 
+            p.card-descrs #{item.description}
+            p.prices #{item.prices}<span> грн.</span>
+                a(href=item.href class="zakaz") замовити
+
+
+            
             
 
 
