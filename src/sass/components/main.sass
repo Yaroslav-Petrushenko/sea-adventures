@@ -1,6 +1,4 @@
 
-
-    
 .price-card
     text-align: center
     margin: 10rem 20rem
@@ -11,9 +9,18 @@
     &:hover 
         filter: drop-shadow(0rem 4rem 10.5rem rgba(3,20,31,0.05))
         background-color: #ffffff
+    &:hover::before 
+        opacity: 1
+        transition: .3s all linear
+        content: url(../img/zorya.png)
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 2
 .price-probs
+    position: relative
     text-align: left
-    margin: 15rem 20rem
+    margin: 18rem 20rem
     width: 270rem 
     text-align: center
     cursor: pointer
@@ -29,7 +36,28 @@
         font-weight: 400
         font-family: "Rubik"
         text-align: center
-        text-decoration: none
+        text-decoration: none   
+    &:hover::before 
+        opacity: 1
+        transition: .3s all linear
+        content: url(../img/zorya.png)
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 2
+.blubike
+    transition: .3s all linear
+    position: relative
+    &:hover::after
+        opacity: 1
+        content: url(../img/moped.png)
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 1
+
+
+
 
 .buttons
     .button
@@ -53,7 +81,7 @@
     font-weight: 400
     font-family: "Rubik"
 .card-descr  
-    padding: 8rem 9rem
+    padding: 8rem 22rem
     font-size: 13rem
     color: #999999
     font-weight: 400
@@ -337,6 +365,7 @@
         font-weight: 400
         font-family: "Rubik"
     .ora
+        position: relative
         margin: 0 30rem 15rem
         display: inline-block
         padding: 8rem 30rem
@@ -353,6 +382,15 @@
         &:hover 
             background-color: #ffb700
             color: #ffffff
+        &::before 
+            content: ""
+            position: absolute
+            width: 15px
+            height: 11px
+            top: 17px
+            left: 9px
+            transform: translateY(-50%)
+            background: url(../img/tuchka.png) no-repeat center
 .graf
     margin: 0 20rem
     background: url(../img/restor.png) no-repeat
@@ -387,6 +425,7 @@
         font-weight: 400
         font-family: "Rubik"
     .ora
+        position: relative
         display: inline-block
         margin: 0 30rem 13rem
         padding: 8rem 29rem
@@ -403,6 +442,15 @@
         &:hover 
             background-color: #ffb700
             color: #ffffff
+        &::before 
+            content: ""
+            position: absolute
+            width: 15px
+            height: 11px
+            top: 17px
+            left: 9px
+            transform: translateY(-50%)
+            background: url(../img/tuchka.png) no-repeat center
 .anna
     text-align: center
     h4
