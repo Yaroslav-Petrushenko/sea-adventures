@@ -45,16 +45,24 @@
         top: 0
         left: 0
         z-index: 2
-.blubike
+.bluebike
     transition: .3s all linear
     position: relative
     &:hover::after
         opacity: 1
         content: url(../img/moped.png)
         position: absolute
-        top: 0
-        left: 0
+        top: 18px
+        left: 20px
         z-index: 1
+    &:hover::before 
+        opacity: 1
+        transition: .3s all linear
+        content: url(../img/zorya.png) 
+        position: absolute
+        top: 18px
+        left: 20px
+        z-index: 2
 
 
 
