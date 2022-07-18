@@ -66,7 +66,7 @@
             alt: "Спеціальні пропозиції тижня",
             ins: "Романтична подорож на 2",
             description: "Подорожуючи  на велосипеді, ви поринете в атмосферу мальовничих гір, чарівнмх краєвидів та шалених пригод.",
-            prices: "2599",
+            prices: "2599 грн",
             href: "#"
         },
         velo: {
@@ -74,7 +74,7 @@
             alt: "Спеціальні пропозиції тижня",
             ins: "Велотур",
             description: "Подорожуючи  на велосипеді, ви поринете в атмосферу мальовничих гір, чарівнмх краєвидів та шалених пригод.",
-            prices: "555",
+            prices: "555 грн",
             href: "#"
         },
         island: {
@@ -82,7 +82,7 @@
             alt: "Спеціальні пропозиції тижня",
             ins: "На острови!",
             description: "Подорож на острів занурить Вас у незабутнні пригоди. Неймовірна краса  у будь-яку пору року.",
-            prices: "1559",
+            prices: "1559 грн",
             href: "#"
 
         },
@@ -91,7 +91,7 @@
             alt: "Спеціальні пропозиції тижня",
             ins: "Катання на сьорфінгу",
             description: "Обираючи цю подорож, Ви самостійно робите її незабутнбою та не схожою на будь-які інші.",
-            prices: "999",
+            prices: "999 грн",
             href: "#"
 
         }
@@ -119,10 +119,11 @@ mixin prob (item)
             picture
                 sourse(srcset=item.src + ".webp", type="image/webp")
                 img(src=item.src + ".png", alt=item.alt)
-            p.ins #{item.ins} 
-            p.card-descrs #{item.description}
-            p.prices #{item.prices}<span> грн.</span>
-                a(href=item.href class="zakaz") замовити
+            .pricepad
+                p.ins #{item.ins} 
+                p.card-descrs #{item.description}
+                p.prices #{item.prices}
+                    a(href=item.href class="zakaz") замовити
 
 
             
